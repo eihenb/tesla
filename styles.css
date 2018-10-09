@@ -26,6 +26,7 @@ img {
 }
 .header {
   display: flex;
+  justify-content: space-around;
   font-weight: 600;
   font-size: 15px;
   margin: 24px 0 58px 0;
@@ -147,7 +148,7 @@ img {
   font-size: 12px;
   font-weight: 400;
 }
-.buttons__test {
+.car-info__test {
   width: 115px;
   height: 40px;
   font-weight: 700;
@@ -158,7 +159,7 @@ img {
   cursor: pointer;
   position: relative;
 }
-.buttons__test:before {
+.car-info__test:before {
     width: 22px;
     content: " ";
     background-image: url(img/steering-wheel.svg);
@@ -167,7 +168,7 @@ img {
     top: 6px;
     height:22px;
 }
-.buttons__order {
+.car-info__order {
   border: 2px solid red;
   width: 160px;
   height: 40px;
@@ -177,7 +178,7 @@ img {
   color: #E51937;
   cursor: pointer;
 }
-.buttons__order--red {
+.car-info__order--red {
   background: #E51937;
   color: #fff;
   font-weight: 400;
@@ -296,7 +297,7 @@ img {
   font-size: 12px;
   font-weight: 300;
 }
-.buttons {
+.car-info__buttons {
   display: flex;
 }
 .interface__buttons {
@@ -494,10 +495,16 @@ img {
   }
   .car-info__inner {
     width: 100%;
+    flex-direction: column;
+  }
+  .car-info__buttons {
+    justify-content: space-evenly;
   }
   .car-info__block {
     justify-content: space-evenly;
+    margin-bottom: 35px;
   }
+  
   .interface {
     flex-direction: column;
   }
@@ -548,14 +555,11 @@ img {
   .security-btn {
     width: 40%;
   }
-  .buttons {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 650px) {
   .nav-sideNav__item, 
-  .buttons,
+  .car-info__buttons,
   .interface__details,
   .interface__buttons,
   .security-rating__title,
