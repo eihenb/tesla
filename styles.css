@@ -3,6 +3,7 @@ body {
   width: 100%;
   box-sizing: border-box;
   overflow-x: hidden;
+  margin: 0;
 }
 img {
   max-width: 100%;
@@ -65,7 +66,6 @@ a {
 }
 .slogan-background {
   background: url(img/tesla.jpg) no-repeat;
-  /* background-position: center -100px; */
   background-size: 100%;
   background-position: center -50px;
   width: 100%;
@@ -94,7 +94,7 @@ a {
 .specs-box {
   display: flex;
   justify-content: center;
-  min-width: 320px;
+  margin-right: 20px;
 }
 .specs-inner__item {
   display: flex;
@@ -115,13 +115,11 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 200px;
-  margin-left: 25px;
+  margin-left: 15px;
 }
 .specs-order {
   display: flex;
   flex: 2;
-  min-width: 280px;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -256,7 +254,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 440px;
+  /* min-width: 440px; */
   color: #fff;
   max-width: 30%;
   background: #E51937;
@@ -359,7 +357,7 @@ a {
 }
 
 
-@media (max-width: 61em) {
+@media (max-width: 976px) {
   .specs-inner,
   .specs-box {
     min-width: 0;
@@ -377,11 +375,11 @@ a {
     height: 21em;
   }
   .specs-inner {
-    width: 75%;
+    width: 100%;
     flex-direction: column;
   }
   .specs-inner__item {
-    justify-content: center;
+    justify-content: space-around
 }
   .specs-order {
     margin-top: 35px;
@@ -418,7 +416,7 @@ a {
     max-width: 100%;
   }
 }
-@media (max-width: 35em) {
+@media (max-width: 560px) {
   .model-specs,
   .info-mark,
   .info-btns {
@@ -433,6 +431,12 @@ a {
   .slogan-background {
     height: 14em;
   }
+  .slogan__title {
+    font-size: 65px;
+  }
+  .slogan__subtitle {
+    font-size: 12px;
+  }
   .specs-inner {
     width: 100%;
   }
@@ -440,10 +444,13 @@ a {
     width: 45%
   }
   .specs-inner__item {
-    justify-content: flex-end;
+    justify-content: center;
+  }
+  .specs-box__title {
+    font-size: 21px;
   }
   .model-background {
-    height: 18em;
+    height: 13em;
   }
   .specs-order__button--test,
   .specs-order__button--test:before {
